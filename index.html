@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felisitas Griselda | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">Porto<span class="accent-dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#about">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="container hero-layout">
+            <!-- Text -->
+            <div class="hero-text">
+                <span class="greeting">Hi there! I’m Felisitas</span>
+                <h1>Designing <span class="highlight">Digital Experiences</span> that Feel Intuitive & Inviting.</h1>
+                <p class="hero-desc">
+                    I specialize in <b>UX Design</b> and <b>Web Development</b>. I merge user-centered research with clean interfaces to create products that are visually pleasing and meaningful.
+                </p>
+                <div class="cta-group">
+                    <a href="#work" class="btn btn-primary">Explore My Work</a>
+                </div>
+            </div>
+
+            <!-- Photo -->
+            <div class="hero-image-wrapper">
+                <div class="blob-background"></div>
+                <!-- Pastikan file gambar ada di folder img -->
+                <img src="img/grisel.jpg" alt="Profile Photo" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- PHILOSOPHY SECTION (SEJAJAR DENGAN HERO) -->
+    <section id="philosophy" class="copy-section">
+        <div class="container">
+            <div class="philosophy-intro">
+                <h2>Design with Empathy. Build with Purpose.</h2>
+                <p>I craft experiences that don’t just work — they connect. My design approach blends logic, emotion, and visual rhythm.</p>
+            </div>
+
+            <div class="copy-highlights">
+                <div class="copy-card">
+                    <h3>Human-Centered</h3>
+                    <p>My process begins with understanding stories — users, pain points, and intent.</p>
+                </div>
+                <div class="copy-card">
+                    <h3>Clean Aesthetics</h3>
+                    <p>Minimal, structured, visually balanced. Elegant doesn’t mean empty.</p>
+                </div>
+                <div class="copy-card">
+                    <h3>Detail-Driven</h3>
+                    <p>Micro-interactions, spacing, color tone — each decision matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (CARD LEGA & SWIPEABLE) -->
+    <section id="about" class="section bg-soft experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Experience Highlights</h2>
+                <p class="subtitle">My professional journey and leadership roles.</p>
+            </div>
+            
+            <!-- Wrapper Slider -->
+            <div class="slider-container">
+                
+                <!-- Tombol Kiri -->
+                <button class="slider-btn prev-btn" onclick="scrollExp(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Area Card Geser -->
+                <div class="experience-slider" id="expSlider">
+                    
+                    <!-- Card 1 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2022 — Present</span>
+                        <h3>UI/UX & Web Developer</h3>
+                        <p class="company">Freelance</p>
+                        <p class="desc">Creating interfaces and building digital products with a focus on usability & flow. Collaborating with clients to improve their brand presence.</p>
+                    </div>
+
+                     <!-- Card 2 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2023 — 2024</span>
+                        <h3>Frontend Intern</h3>
+                        <p class="company">SevenInc.</p>
+                        <p class="desc">Collaborated with backend developers to implement responsive designs using React and Tailwind CSS, improving load time by 20%.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2024 - PRESENT</span>
+                        <h3>UI Design Volunteer</h3>
+                        <p class="company">Non-Profit Org</p>
+                        <p class="desc">Redesigned donation landing pages to increase user engagement and trust through better visual hierarchy.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Event Chairperson</h3>
+                        <p class="company">Catholic Faculty Welcoming Event 2025</p>
+                        <p class="desc">Led the full execution of a large-scale welcoming event, coordinating divisions, timeline, budgeting, and operational workflows end-to-end.</p>
+                    </div>
+
+                     <!-- Card 5 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Vice Event Chairperson</h3>
+                        <p class="company">IT Charity (Community Service Program)</p>
+                        <p class="desc">Supported the execution of a social and educational initiative focused on community impact, coordination of volunteers, and operational management.</p>
+                    </div>
+
+                      <!-- Card 6 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Head Coordinator of Sponsorship</h3>
+                        <p class="company">Samba TI</p>
+                        <p class="desc">Strategized partnership acquisition and maintained relationships with external collaborators, securing funding and logistic contributions.</p>
+                    </div>
+
+                        <!-- Card 7 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Head Coordinator of Public Relations </h3>
+                        <p class="company">Techo Competition</p>
+                        <p class="desc">Handled communication, publication strategy, and brand messaging across media channels to enhance event visibility and audience reach.</p>
+                    </div>
+
+                </div>
+
+                <!-- Tombol Kanan -->
+                <button class="slider-btn next-btn" onclick="scrollExp(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS MARQUEE -->
+    <section class="marquee-section">
+        <div class="marquee-content">
+            <!-- Group 1 -->
+             <span>UX Research</span> <span class="dot">•</span> 
+             <span>UI Design</span> <span class="dot">•</span> 
+             <span>Web Development</span> <span class="dot">•</span> 
+             <span>Figma</span> <span class="dot">•</span> 
+             <span>Prototyping</span> <span class="dot">•</span> 
+             <span>Mobile UX</span> <span class="dot">•</span>
+            <!-- Group 2 (Duplikat) -->
+             <span>UX Research</span> <span class="dot">•</span> 
+             <span>UI Design</span> <span class="dot">•</span> 
+             <span>Web Development</span> <span class="dot">•</span> 
+             <span>Figma</span> <span class="dot">•</span> 
+             <span>Prototyping</span> <span class="dot">•</span> 
+             <span>Mobile UX</span> <span class="dot">•</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Featured Projects</h2>
+                <p class="subtitle">Selected works that showcase my passion for design.</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-img-holder">
+                        <img src="img/tint and tone.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Mobile Design</span>
+                        <h3>Tint and Tone</h3>
+                        <p>An AI-powered app recommending makeup and fashion shades tailored to each user's skin tone.</p>
+                        <a href="detail/tintandtone.html" class="read-more">See Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-img-holder">
+                        <img src="img/rifold banner.png" alt="Rifold">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Web Development</span>
+                        <h3>Rifold — E-Commerce</h3>
+                        <p>A modern e-commerce website for Rifold, a fashion brand focused on trendy apparel.</p>
+                        <a href="detail/rifold.html" class="read-more">See Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="card-img-holder">
+                        <img src="img/katalis - 1.png" alt="Katalis">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">UI/UX DESIGN</span>
+                        <h3>KATALIS — Growth App</h3>
+                        <p>A mobile app concept that helps users turn failures into growth through reflection tools.</p>
+                        <a href="detail/katalis.html" class="read-more">See Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="card-img-holder">
+                        <img src="img/mindfull banner.png" alt="Mindfull">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">Web Design</span>
+                        <h3>Mindfull</h3>
+                        <p>A calming web design concept focused on reflection, emotional awareness, and personal growth.</p>
+                        <a href="detail/mindful.html" class="read-more">See Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div> 
+        </div> 
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Let's Collaborate</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/felisitasgrisel/"><i class="fab fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/felisitas-griselda-95b271218"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/grizzyll"><i class="fab fa-github"></i></a>
+                <a href="mailto:grizyyel10@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Felisitas Griselda</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT UTAMA UNTUK SLIDER -->
+    <script>
+        function scrollExp(direction) {
+            const slider = document.getElementById('expSlider');
+            // Geser sebesar lebar kartu (400px) + gap (32px)
+            const scrollAmount = 432; 
+            slider.scrollBy({
+                left: direction * scrollAmount, 
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
