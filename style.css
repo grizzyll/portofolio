@@ -832,3 +832,290 @@ a {
     .meta-box { grid-template-columns: 1fr; gap: 1.5rem; }
     .features-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   CONTENT ANALYSIS PLAYGROUND
+   ========================================= */
+
+/* Disclaimer Box */
+.disclaimer-box {
+    background: #FFFBEB; /* Kuning muda soft */
+    border-left: 4px solid #F59E0B;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.disclaimer-box i { color: #F59E0B; margin-top: 3px; font-size: 1.1rem; }
+
+/* Wrapper */
+.analysis-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+/* Analysis Card (Layout Kiri-Kanan) */
+.analysis-card {
+    background: var(--bg-main);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    /* INI KUNCINYA: Kolom kiri dibatasi max 280px agar gambar tidak melar */
+    grid-template-columns: 280px 1fr; 
+    gap: 3rem;
+    align-items: start;
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+/* Bagian Visual (Kiri) */
+.visual-side {
+    text-align: center;
+    width: 100%; /* Mengikuti lebar kolom 280px */
+}
+
+/* Frame HP agar Tegak Lurus (9:16) */
+.phone-frame {
+    position: relative;
+    width: 100%;
+    /* Rasio aspek Reels/TikTok (Penting!) */
+    aspect-ratio: 9/16; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #000;
+    border: 4px solid var(--white); /* Frame putih tipis */
+}
+
+.phone-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tidak gepeng */
+    display: block;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+/* Efek Hover Gambar */
+.video-link:hover .phone-frame img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Tombol Play di Tengah */
+.play-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; height: 60px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    color: white; font-size: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.6);
+    transition: 0.3s;
+    pointer-events: none; /* Agar klik tembus ke link */
+}
+
+.video-link:hover .play-icon {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.creator-tag {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--bg-light);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+}
+
+/* --- BAGIAN TEKS (KANAN) TETAP SAMA --- */
+.text-side {
+    display: flex; flex-direction: column; gap: 1.5rem;
+}
+/* (Kode teks lainnya sama seperti sebelumnya, pastikan tidak terhapus) */
+
+/* RESPONSIVE (HP) */
+@media (max-width: 900px) {
+    .analysis-card {
+        /* Di HP jadi tumpuk ke bawah */
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .visual-side {
+        /* Di HP gambar dibatasi lebarnya biar ga raksasa */
+        max-width: 250px; 
+        margin: 0 auto;
+    }
+}
+
+/* Bagian Visual (Kiri) */
+.visual-side {
+    text-align: center;
+}
+.creator-tag {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--bg-light);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+}
+
+/* Bagian Teks (Kanan) */
+.text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-header h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+.sub-topic {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* Grid Insight (3 Kolom Kecil) */
+.insight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.insight-item h4 {
+    font-size: 0.9rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 3px;
+}
+.insight-item p, .insight-item ul {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+.insight-item ul { list-style: inside; padding: 0; }
+
+/* My Perspective Box */
+.perspective-box {
+    background: #EFF6FF; /* Biru muda sangat soft */
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+}
+.perspective-box h4 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.perspective-box p {
+    font-size: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+/* Badges */
+.badge-container {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.badge-pill {
+    background: var(--primary);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer Section Analysis */
+.analysis-footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+.analysis-footer h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+.skills-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.skills-tags span {
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--primary);
+}
+.quote-box {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--text-main);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem;
+}
+.quote-box::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--gold);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    opacity: 0.3;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 900px) {
+    .analysis-card {
+        grid-template-columns: 1fr; /* Tumpuk ke bawah */
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    .visual-side {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .insight-grid {
+        grid-template-columns: 1fr; /* Tumpuk ke bawah */
+    }
+    .quote-box { font-size: 1.1rem; }
+}
