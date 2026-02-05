@@ -1,0 +1,63 @@
+ <!-- EXPERIENCE SECTION (Leadership & Teamwork) -->
+    <section id="about" class="section bg-light experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="title">Professional Journey</h2>
+                <p class="subtitle">Leadership & Project Management Experience.</p>
+            </div>
+            
+            <div class="slider-container" data-aos="fade-up" data-aos-delay="200">
+                <button class="slider-btn prev-btn" onclick="scrollExp(-1)"><i class="fas fa-chevron-left"></i></button>
+
+                <div class="experience-slider" id="expSlider">
+                  <!-- Card 2 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2023 — 2024</span>
+                        <h3>UI/UX Intern</h3>
+                        <p class="company">SevenInc.</p>
+                        <p class="desc">Collaborated with Client for design UI/UX web or mobile.</p>
+                    </div>
+                     <!-- Card 1 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2022 — 2024</span>
+                        <h3>UI/UX & Web Developer</h3>
+                        <p class="company">Freelance</p>
+                        <p class="desc">Creating interfaces and building digital products with a focus on usability &
+                            flow.</p>
+                    </div>
+                      <!-- Card 2 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Event Chairperson</h3>
+                        <p class="company">IT CHARITY</p>
+                        <p class="desc">>Led the full execution of a large-scale welcoming event, coordinating divisions
+                            & budgeting.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Event Chairperson</h3>
+                        <p class="company">Catholic Faculty Welcoming Event</p>
+                        <p class="desc">Led a team of 15, managed creative direction for event publication, and oversaw end-to-end event execution.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Head of Public Relations</h3>
+                        <p class="company">Techo Competition</p>
+                        <p class="desc">Managed social media communication strategy and created engaging copy for event promotions.</p>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn" onclick="scrollExp(1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+ 
+ <div class="social-links">
+                <a href="https://www.instagram.com/felisitasgrisel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/felisitas-griselda-95b271218" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/grizzyll" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:grizyyel10@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Felisitas Griselda</p>

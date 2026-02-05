@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - TravelMate ID</title>
+    
+    <!-- Link CSS Mundur Satu Folder -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo"><a href="../index.html">Porto<span class="accent-dot">.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="section" style="padding-top: 3rem;">
+        <div class="container">
+            
+            <!-- 1. HEADER KECIL -->
+            <div class="detail-header">
+                <a href="../index.html#work" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Work
+                </a>
+                <div class="project-title-wrapper">
+                    <h1>TravelMate ID</h1>
+                    <span class="subtitle">AI Development • Semantic Search Engine</span>
+                </div>
+            </div>
+
+            <!-- 2. BANNER IMAGE -->
+            <!-- PENTING: Ganti nama file gambar sesuai screenshot aplikasimu -->
+            <div class="detail-banner">
+                <img src="../img/travelID.png" alt="TravelMate ID Interface">
+            </div>
+
+            <!-- 3. META INFO -->
+            <div class="meta-box">
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p>AI Engineer & Fullstack Dev</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Timeline</h4>
+                    <p>Dec 2025</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Tech Stack</h4>
+                    <p>Python, Flask, BERT, FAISS</p>
+                </div>
+            </div>
+
+            <!-- 4. TEXT CONTENT (Story) -->
+            <div class="story-container">
+                
+                <!-- Challenge Section -->
+                <div class="text-block">
+                    <h3>The Challenge</h3>
+                    <p class="lead-paragraph">
+                        Traditional travel search engines rely heavily on keywords, often failing to understand context like "healing spots" or "adrenalin activities".
+                    </p>
+                    <p>
+                        Furthermore, tourism data in Indonesia is often fragmented. Location data exists in one dataset, while pricing and ratings are in another. A major technical hurdle was <b>AI Hallucination</b>—where searching for "Malang" could incorrectly return results for "Pemalang" due to string similarity.
+                    </p>
+                </div>
+
+                <!-- Divider -->
+                <hr class="aesthetic-divider">
+
+                <!-- Solution Section -->
+                <div class="text-block">
+                    <h3>The Solution</h3>
+                    <p>
+                        <b>TravelMate ID</b> is a smart tourism recommendation system powered by <b>Hybrid Semantic Search</b>. I combined <b>Strict Regex Filtering</b> to lock specific locations (preventing hallucinations) with <b>Sentence-Transformer (BERT)</b> to understand the semantic meaning of user queries.
+                    </p>
+                    <p>
+                        To solve the data fragmentation, I implemented a <b>Smart Data Enrichment</b> pipeline using Python Pandas to merge datasets using fuzzy matching logic. The system also intelligently imputes missing price/rating data based on the tourism category to ensure a seamless user experience.
+                    </p>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h3 class="text-center">Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                            <h4>Hybrid AI Search</h4>
+                            <p>Combines Regex for accurate location filtering with Vector Search (FAISS) for context.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon-circle"><i class="fas fa-database"></i></div>
+                            <h4>Smart Data Merge</h4>
+                            <p>Unified multiple datasets to provide comprehensive data (Price + Rating + Location).</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon-circle"><i class="fas fa-tshirt"></i></div>
+                            <h4>Contextual Tips</h4>
+                            <p>Auto-generates outfit & weather advice based on the destination type (e.g., Hiking vs Beach).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <h2>Let's Collaborate</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/felisitasgrisel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/felisitas-griselda-95b271218" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/grizzyll" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:grizyyel10@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Felisitas Griselda</p>
+        </div>
+    </footer>
+
+</body>
+</html>
