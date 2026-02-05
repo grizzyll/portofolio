@@ -22,24 +22,46 @@
   scroll-behavior: smooth;
 }
 
+/* =========================================
+   TYPOGRAPHY UPDATE (LATO & PLAYFAIR)
+   Timpa bagian ini di style.css kamu
+   ========================================= */
+
 body {
-  font-family: "Inter", sans-serif;
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-  overflow-x: hidden;
+    /* Kembali ke Lato (Clean & Humanis) */
+    font-family: 'Lato', sans-serif; 
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7; /* Line height sedikit lebih lega biar elegan */
+    overflow-x: hidden;
 }
 
-/* Typography Tech Style */
-h1,
-h2,
-h3,
-h4,
-.logo,
-.exp-year {
-  font-family: "Space Grotesk", sans-serif; /* Modern Tech Font */
-  font-weight: 700;
-  color: var(--primary);
+/* Typography untuk Judul (Elegant) */
+h1, h2, h3, h4, .logo, .exp-year {
+    /* Kembali ke Playfair Display (Serif Elegan) */
+    font-family: 'Playfair Display', serif; 
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 0; /* Playfair bagus tanpa letter-spacing aneh-aneh */
+}
+
+/* UPDATE KHUSUS MARQUEE (Biar ga nabrak font baru) */
+.marquee-content {
+    display: inline-block; 
+    animation: scroll 30s linear infinite;
+    /* Kita tetap pakai font sans-serif untuk codingan biar kebaca jelas */
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    font-size: 1.2rem;
+}
+
+/* UPDATE KARTU PROJECT (Biar judul project cantik) */
+.card-info h3 { 
+    font-size: 1.4rem; 
+    margin-bottom: 0.2rem; 
+    color: white; 
+    font-family: 'Playfair Display', serif; /* Judul Project jadi elegan */
+    font-style: italic; /* Sedikit miring biar artsy (opsional) */
 }
 
 .container {
@@ -240,30 +262,43 @@ a {
    4. TECH STACK MARQUEE
    ========================================= */
 .marquee-section {
-  background-color: var(--primary);
-  color: white;
-  padding: 2rem 0;
-  overflow: hidden;
-  white-space: nowrap;
+    background-color: var(--primary); /* Warna Navy/Dusty Rose sesuai variabelmu */
+    color: white;
+    padding: 1.8rem 0; /* Sedikit lebih lega */
+    overflow: hidden;
+    white-space: nowrap;
+    /* Tambahan border tipis biar rapi */
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
 .marquee-content {
-  display: inline-block;
-  animation: scroll 30s linear infinite;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
+    display: inline-block;
+    animation: scroll 35s linear infinite; /* Jalannya lebih santai/elegan */
+    
+    /* KEMBALI KE FONT CLEAN */
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; /* Tidak terlalu tebal (bold) biar manis */
+    font-size: 1.1rem; /* Ukuran pas */
+    letter-spacing: 1.5px; /* Spasi antar huruf biar kesan 'mahal' */
 }
+
 .marquee-content span {
-  margin: 0 3rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+    margin: 0 3rem; /* Jarak antar skill lega */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
 }
+
 .marquee-content i {
-  font-size: 1.5rem;
+    font-size: 1.4rem;
+    opacity: 0.8; /* Ikon sedikit transparan biar tidak nusuk mata */
 }
+
+/* Garis Pemisah (Divider) */
 .divider {
-  color: rgba(255, 255, 255, 0.2);
+    color: rgba(255,255,255,0.3);
+    font-weight: 300;
 }
 @keyframes scroll {
   0% {
