@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felisitas Griselda | Fullstack Engineer</title>
+    <title>Felisitas Griselda | Fullstack Developer</title>
     
-    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Library Animasi (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-    
-    <!-- Icons (Devicon & FontAwesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+    <nav class="navbar" data-aos="fade-down">
         <div class="container nav-wrapper">
-            <div class="logo">Felisitas<span class="accent-dot">_</span></div>
+            <div class="logo">Griselda<span class="accent-dot">.</span>dev</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#stack">Tech Stack</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact" class="btn-nav">Hire Me</a></li>
             </ul>
@@ -41,32 +34,28 @@
         <div class="container hero-layout">
             <div class="hero-text" data-aos="fade-right">
                 <div class="badge-tech">
-                    <i class="fas fa-certificate"></i> Certiport Int'l Certified
+                    <i class="fas fa-graduation-cap"></i> GPA 3.84 - Brawijaya University
                 </div>
-                <h1>Building Scalable Systems with <span class="highlight">User-Centric</span> Intelligence.</h1>
+                <h1>Engineering <span class="highlight">Smart Systems</span> with Fullstack Precision.</h1>
                 <p class="hero-desc">
-                    I am a <b>Fullstack Engineer</b> and <b>UX Researcher</b>. I bridge the gap between complex backend logic (Laravel/Node) and intuitive frontend experiences. Currently exploring <b>AI & Python</b>.
+                    Fullstack Developer specializing in <b>Laravel, Vue.js, and IoT</b>. I turn complex business problems into scalable digital solutions—from restaurant POS systems to AI-powered waste sorters.
                 </p>
                 <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">View Works</a>
-                    <a href="documents/cv.pdf" class="btn btn-outline">Download Resume</a>
- 
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="documents/cv.pdf" class="btn btn-outline">Download CV</a>
                 </div>
             </div>
 
             <div class="hero-image-wrapper" data-aos="zoom-in">
                 <div class="tech-bg"></div>
-                <!-- Pastikan nama file foto benar -->
-                <img src="img/grisel.jpg" alt="Profile Photo" class="profile-img">
-                
-                <!-- Floating Tech Card -->
+                <img src="img/grisel.jpg" alt="Felisitas Griselda" class="profile-img">
                 <div class="floating-card glass-card">
                     <div class="icon-stack">
                         <i class="devicon-laravel-plain colored"></i>
                         <i class="devicon-vuejs-plain colored"></i>
-                        <i class="devicon-researcher-plain colored"></i>
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
                     </div>
-                    <span>Fullstack & UX Researcher</span>
+                    <span>AWS & GCP Certified</span>
                 </div>
             </div>
         </div>
@@ -75,266 +64,190 @@
     <!-- TECH STACK MARQUEE -->
     <section id="stack" class="marquee-section">
         <div class="marquee-content">
-            <!-- Isi 2x biar looping -->
             <span><i class="devicon-laravel-plain"></i> Laravel</span>
             <span><i class="devicon-vuejs-plain"></i> Vue.js</span>
-            <span><i class="devicon-react-original"></i> React.js</span>
-            <span><i class="devicon-python-plain"></i> Python</span>
+            <span><i class="devicon-tailwindcss-original-wordmark"></i> Tailwind</span>
             <span><i class="devicon-nodejs-plain"></i> Node.js</span>
-            <span><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span><i class="devicon-arduino-plain"></i> ESP32/IoT</span>
+            <span><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+            <span><i class="devicon-googlecloud-plain"></i> GCP</span>
             <span class="divider">|</span>
+            <!-- Duplicate for loop -->
             <span><i class="devicon-laravel-plain"></i> Laravel</span>
             <span><i class="devicon-vuejs-plain"></i> Vue.js</span>
-            <span><i class="devicon-react-original"></i> React.js</span>
-            <span><i class="devicon-python-plain"></i> Python</span>
+            <span><i class="devicon-tailwindcss-original-wordmark"></i> Tailwind</span>
             <span><i class="devicon-nodejs-plain"></i> Node.js</span>
-            <span><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span><i class="devicon-arduino-plain"></i> ESP32/IoT</span>
+            <span><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+            <span><i class="devicon-googlecloud-plain"></i> GCP</span>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION (WATERFALL ANIMATION) -->
+    <!-- NEW SECTION: CERTIFICATIONS (DARI CV) -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="title">Professional Certifications</h2>
+                <p class="subtitle">Verified expertise in Cloud, Backend, and Mobile technologies.</p>
+            </div>
+            
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-item glass-card" data-aos="flip-left">
+                    <i class="fab fa-aws cert-icon" style="color: #FF9900;"></i>
+                    <h4>AWS Certified Cloud Practitioner</h4>
+                    <p>Amazon Web Services</p>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fab fa-google cert-icon" style="color: #4285F4;"></i>
+                    <h4>Associate Cloud Engineer</h4>
+                    <p>Google Cloud Platform</p>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="devicon-nodejs-plain colored cert-icon"></i>
+                    <h4>Node.js & React JS</h4>
+                    <p>Skill Competency — DOT</p>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="devicon-java-plain colored cert-icon"></i>
+                    <h4>Java Expert</h4>
+                    <p>International Cert — Certiport</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="title">Engineering & Design</h2>
-                <p class="subtitle">A curation of complex web applications and AI experiments.</p>
+                <h2 class="title">Featured Engineering</h2>
+                <p class="subtitle">Focusing on Full-Stack Systems & IoT Hardware Integration.</p>
             </div>
 
             <div class="waterfall-wrapper">
-                
-                <!-- KOLOM KIRI (Turun) -->
                 <div class="waterfall-column col-down">
-                    <!-- GROUP 1 -->
+                    <!-- SORTIR.IN (UTAMA DI CV) -->
                     <div class="card-group">
-                        
-                        <!-- Project 1: Rifold -->
+                        <a href="detail/sortirin.html" class="project-card tall">
+                            <img src="img/sortirin.png" alt="Sortir.in IoT">
+                            <div class="card-info">
+                                <div class="tech-tags"><small>C++</small><small>ESP32</small><small>Laravel</small></div>
+                                <h3>SORTIR.IN: Smart Waste Sorter</h3>
+                                <span>IoT Hardware & Web Monitoring</span>
+                            </div>
+                        </a>
+                        <!-- RIFOLD -->
                         <a href="detail/rifold.html" class="project-card medium">
                             <img src="img/rifold banner.png" alt="Rifold">
                             <div class="card-info">
-                                <div class="tech-tags"><small>Laravel</small><small>MySQL</small></div>
+                                <div class="tech-tags"><small>Laravel</small><small>VPS</small></div>
                                 <h3>Rifold E-Commerce</h3>
-                                <span>Fullstack Web</span>
-                            </div>
-                        </a>
-
-                        <!-- Project 2: Katalis -->
-                        <a href="detail/katalis.html" class="project-card short">
-                            <img src="img/katalis - 1.png" alt="Katalis">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>UI/UX</small></div>
-                                <h3>Katalis App</h3>
-                                <span>Social Platform</span>
-                            </div>
-                        </a>
-
-                        <!-- Project 3: Smart Travel AI (Placeholder Image) -->
-                        <a href="detail/travel.html" class="project-card short">
-                            <img src="img/travelID.png" alt="AI Travel">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Python</small><small>AI</small></div>
-                                <h3>Smart Travel Recs</h3>
-                                <span>TravelMateID</span>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <!-- GROUP 2 (DUPLIKAT) -->
-                    <div class="card-group">
-                        <a href="detail/rifold.html" class="project-card medium">
-                            <img src="img/rifold banner.png" alt="Rifold">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Laravel</small><small>MySQL</small></div>
-                                <h3>Rifold E-Commerce</h3>
-                                <span>Fullstack Web</span>
-                            </div>
-                        </a>
-                        <a href="detail/katalis.html" class="project-card short">
-                            <img src="img/katalis - 1.png" alt="Katalis">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>UI/UX</small></div>
-                                <h3>Katalis App</h3>
-                                <span>Social Platform</span>
-                            </div>
-                        </a>
-                        <a href="detail/travel.html" class="project-card short">
-                            <img src="img/travelID.png" alt="AI Travel">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Python</small><small>AI</small></div>
-                                <h3>Smart Travel Recs</h3>
-                                <span>TravelMateID</span>
+                                <span>Full Digital Transformation</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- KOLOM KANAN (Naik) -->
                 <div class="waterfall-column col-up">
-                    <!-- GROUP 1 -->
                     <div class="card-group">
-                        
-                        <!-- Project 4: Warung Lesehan Yogya -->
+                        <!-- WARUNG LESEHAN -->
                         <a href="detail/ayam.html" class="project-card tall">
-                            <!-- Ganti dengan screenshot sistem manajemennya -->
-                            <img src="img/thumbnail ayam.png" alt="Ayam Yogya System">
+                            <img src="img/thumbnail ayam.png" alt="Management System">
                             <div class="card-info">
                                 <div class="tech-tags"><small>Laravel</small><small>Vue.js</small></div>
                                 <h3>Restaurant Management System</h3>
-                                <span>Warung Lesehan Yogyakarta</span>
+                                <span>Handling 300+ daily transactions</span>
                             </div>
                         </a>
-
-                        <!-- Project 5: Mindfull (Menggantikan CafeIN) -->
-                        <a href="detail/mindful.html" class="project-card tall">
-                            <img src="img/mindfull banner.png" alt="Mindfull">
+                        <!-- TRAVELMATE AI -->
+                        <a href="detail/travel.html" class="project-card medium">
+                            <img src="img/travelID.png" alt="AI Travel">
                             <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>Design</small></div>
-                                <h3>Mindfull</h3>
-                                <span>Wellness Platform</span>
-                            </div>
-                        </a>
-
-                        <!-- Project 6: Tint & Tone -->
-                        <a href="detail/tintandtone.html" class="project-card medium">
-                            <img src="img/tint and tone.png" alt="Tint and Tone">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>Mobile</small></div>
-                                <h3>Tint & Tone</h3>
-                                <span>AI Beauty Tech</span>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <!-- GROUP 2 (DUPLIKAT) -->
-                    <div class="card-group">
-                        <a href="detail/ayam.html" class="project-card tall">
-                            <img src="img/thumbnail ayam.png" alt="Ayam Yogya System">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Laravel</small><small>Vue.js</small></div>
-                                <h3>Restaurant Management System</h3>
-                                <span>Warung Lesehan Yogyakarta</span>
-                            </div>
-                        </a>
-                        <a href="detail/mindful.html" class="project-card tall">
-                            <img src="img/mindfull banner.png" alt="Mindfull">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>Design</small></div>
-                                <h3>Mindfull</h3>
-                                <span>Wellness Platform</span>
-                            </div>
-                        </a>
-                        <a href="detail/tintandtone.html" class="project-card medium">
-                            <img src="img/tint and tone.png" alt="Tint and Tone">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Figma</small><small>Mobile</small></div>
-                                <h3>Tint & Tone</h3>
-                                <span>AI Beauty Tech</span>
+                                <div class="tech-tags"><small>Python</small><small>FAISS</small><small>AI</small></div>
+                                <h3>TravelMateID AI Engine</h3>
+                                <span>Vector Similarity Recommendation</span>
                             </div>
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCE SECTION (FULL 7 ITEMS) -->
+    <!-- EXPERIENCE SECTION -->
     <section id="experience" class="section bg-light">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="title">Professional Experience</h2>
-                <p class="subtitle">My journey in Tech Industry & Leadership.</p>
+                <h2 class="title">Work Journey</h2>
             </div>
             
             <div class="slider-container" data-aos="fade-up">
                 <button class="slider-btn prev-btn" onclick="scrollExp(-1)"><i class="fas fa-chevron-left"></i></button>
-
                 <div class="experience-slider" id="expSlider">
                     
-                    <!-- 2. Intern -->
+                    <!-- Freelance -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Freelance Full-Stack</h3>
+                        <p class="company">Warung Lesehan Yogyakarta</p>
+                        <p class="desc">Eliminated 100% of manual cash flow recording & preventing financial losses via real-time system.</p>
+                    </div>
+
+                    <!-- Rifold -->
+                    <div class="exp-card swiper-card">
+                        <span class="exp-year">2025</span>
+                        <h3>Full-Stack (Volunteer)</h3>
+                        <p class="company">Rifold E-Commerce</p>
+                        <p class="desc">Deployed production-ready platform on custom VPS with 3.84 GPA maintenance.</p>
+                    </div>
+
+                    <!-- SevenInc -->
                     <div class="exp-card swiper-card">
                         <span class="exp-year">2023 — 2024</span>
-                        <h3>Frontend Intern</h3>
+                        <h3>UI/UX Designer Intern</h3>
                         <p class="company">SevenInc.</p>
-                        <p class="desc">Collaborated with backend developers to implement responsive designs using React and Tailwind CSS, improving load time by 20%.</p>
+                        <p class="desc">Designed finance job portals & prototyped Car Rental Systems with cross-functional teams.</p>
                     </div>
 
-                    <!-- 3. Volunteer -->
-                    <div class="exp-card swiper-card">
-                        <span class="exp-year">2024 — 2025</span>
-                        <h3>Graphic Design Volunteer</h3>
-                        <p class="company">Sign Language Class Initiative</p>
-                        <p class="desc">I've been a design volunteer for a sign language event for a year now, handling the posters, the registration interface, and other design needs.</p>
-                    </div>
-
-                    <!-- 4. Chairperson -->
+                    <!-- Leadership -->
                     <div class="exp-card swiper-card">
                         <span class="exp-year">2025</span>
                         <h3>Event Chairperson</h3>
                         <p class="company">Catholic Faculty Welcoming</p>
-                        <p class="desc">Led the full execution of a large-scale welcoming event, coordinating divisions, timeline, budgeting, and operational workflows.</p>
-                    </div>
-
-                    <!-- 5. Vice Chairperson -->
-                    <div class="exp-card swiper-card">
-                        <span class="exp-year">2025</span>
-                        <h3>Vice Event Chairperson</h3>
-                        <p class="company">IT Charity</p>
-                        <p class="desc">Supported the execution of a social and educational initiative focused on community impact and operational management.</p>
-                    </div>
-
-                    <!-- 6. Sponsorship -->
-                    <div class="exp-card swiper-card">
-                        <span class="exp-year">2025</span>
-                        <h3>Head of Sponsorship</h3>
-                        <p class="company">Samba TI</p>
-                        <p class="desc">Strategized partnership acquisition and maintained relationships with external collaborators, securing funding and logistic contributions.</p>
-                    </div>
-
-                    <!-- 7. Public Relations -->
-                    <div class="exp-card swiper-card">
-                        <span class="exp-year">2025</span>
-                        <h3>Head of Public Relations</h3>
-                        <p class="company">Techo Competition</p>
-                        <p class="desc">Handled communication, publication strategy, and brand messaging across media channels to enhance event visibility.</p>
+                        <p class="desc">Led full execution of large-scale event, coordinating 5+ divisions & high-level budgets.</p>
                     </div>
 
                 </div>
-
                 <button class="slider-btn next-btn" onclick="scrollExp(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact" class="footer" data-aos="fade-up">
+    <footer id="contact" class="footer">
         <div class="container">
-            <h2>Have a project or offer?</h2>
-            <p>I'm open for Fullstack Engineer or UI/UX Research roles.</p>
+            <h2>Ready to collaborate?</h2>
+            <p>Available for Fullstack Developer or IoT roles.</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/felisitasgrisel/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/felisitas-griselda-95b271218" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://linkedin.com/in/felisitas-griselda-95b271218" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/grizzyll" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:grizyyel10@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">&copy; 2025 Felisitas Griselda.</p>
+            <p class="copyright">&copy; 2025 Felisitas Griselda Arindia.</p>
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Init Animasi
-        AOS.init({ once: true, offset: 100, duration: 800 });
-        
-        // Init Slider
+        AOS.init({ once: true, duration: 800 });
         function scrollExp(direction) {
             const slider = document.getElementById('expSlider');
-            // Lebar card + gap
-            slider.scrollBy({ left: direction * 432, behavior: 'smooth' });
+            slider.scrollBy({ left: direction * 400, behavior: 'smooth' });
         }
     </script>
-
 </body>
 </html>
