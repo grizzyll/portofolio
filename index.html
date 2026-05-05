@@ -36,13 +36,13 @@
                 <div class="badge-tech">
                     <i class="fas fa-graduation-cap"></i> GPA 3.84 - Brawijaya University
                 </div>
-                <h1>Engineering <span class="highlight">Smart Systems</span> with Fullstack Precision.</h1>
+                <h1>Engineering <span class="highlight">Impactful Systems</span> with Fullstack Precision.</h1>
                 <p class="hero-desc">
-                    Fullstack Developer specializing in <b>Laravel, Vue.js, and IoT</b>. I turn complex business problems into scalable digital solutions—from restaurant POS systems to AI-powered waste sorters.
+                    Fullstack Developer specializing in <b>Laravel, Vue.js, and IoT</b>. I turn complex business problems into production-ready digital solutions—from restaurant management to AI-powered engines.
                 </p>
                 <div class="cta-group">
                     <a href="#projects" class="btn btn-primary">View Portfolio</a>
-                    <a href="documents/cv.pdf" class="btn btn-outline">Download CV</a>
+                    <a href="https://github.com/grizzyll" class="btn btn-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
 
@@ -72,7 +72,6 @@
             <span><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
             <span><i class="devicon-googlecloud-plain"></i> GCP</span>
             <span class="divider">|</span>
-            <!-- Duplicate for loop -->
             <span><i class="devicon-laravel-plain"></i> Laravel</span>
             <span><i class="devicon-vuejs-plain"></i> Vue.js</span>
             <span><i class="devicon-tailwindcss-original-wordmark"></i> Tailwind</span>
@@ -83,34 +82,30 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: CERTIFICATIONS (DARI CV) -->
+    <!-- CERTIFICATIONS -->
     <section id="certifications" class="section bg-light">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="title">Professional Certifications</h2>
-                <p class="subtitle">Verified expertise in Cloud, Backend, and Mobile technologies.</p>
+                <p class="subtitle">Verified expertise in Cloud, Backend, and System Architecture.</p>
             </div>
             
             <div class="cert-grid">
-                <!-- Cert 1 -->
                 <div class="cert-item glass-card" data-aos="flip-left">
                     <i class="fab fa-aws cert-icon" style="color: #FF9900;"></i>
                     <h4>AWS Certified Cloud Practitioner</h4>
                     <p>Amazon Web Services</p>
                 </div>
-                <!-- Cert 2 -->
                 <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="100">
                     <i class="fab fa-google cert-icon" style="color: #4285F4;"></i>
                     <h4>Associate Cloud Engineer</h4>
                     <p>Google Cloud Platform</p>
                 </div>
-                <!-- Cert 3 -->
                 <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="200">
                     <i class="devicon-nodejs-plain colored cert-icon"></i>
                     <h4>Node.js & React JS</h4>
                     <p>Skill Competency — DOT</p>
                 </div>
-                <!-- Cert 4 -->
                 <div class="cert-item glass-card" data-aos="flip-left" data-aos-delay="300">
                     <i class="devicon-java-plain colored cert-icon"></i>
                     <h4>Java Expert</h4>
@@ -125,53 +120,63 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="title">Featured Engineering</h2>
-                <p class="subtitle">Focusing on Full-Stack Systems & IoT Hardware Integration.</p>
+                <p class="subtitle">Real-world deployments and complex system integrations.</p>
             </div>
 
             <div class="waterfall-wrapper">
+                <!-- COLUMN 1 -->
                 <div class="waterfall-column col-down">
-                    <!-- SORTIR.IN (UTAMA DI CV) -->
-                    <div class="card-group">
-                        <a href="detail/sortirin.html" class="project-card tall">
-                            <img src="img/sortirin.png" alt="Sortir.in IoT">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>C++</small><small>ESP32</small><small>Laravel</small></div>
-                                <h3>SORTIR.IN: Smart Waste Sorter</h3>
-                                <span>IoT Hardware & Web Monitoring</span>
+                    <!-- WARUNG LESEHAN (LIVE) -->
+                    <div class="project-card tall" data-aos="fade-up">
+                        <img src="img/thumbnail ayam.png" alt="Management System">
+                        <div class="card-info">
+                            <div class="tech-tags"><small>Laravel</small><small>Vue.js</small><small>MySQL</small></div>
+                            <h3>Warung Lesehan Management</h3>
+                            <p>Handled 300+ daily transactions. Eliminated 100% manual recording errors across 4 roles.</p>
+                            <div class="card-action-links">
+                                <a href="https://warunglesehan.felissel.my.id" target="_blank" class="btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="detail/ayam.html" class="link-detail">Case Study →</a>
                             </div>
-                        </a>
-                        <!-- RIFOLD -->
-                        <a href="detail/rifold.html" class="project-card medium">
-                            <img src="img/rifold banner.png" alt="Rifold">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Laravel</small><small>VPS</small></div>
-                                <h3>Rifold E-Commerce</h3>
-                                <span>Full Digital Transformation</span>
-                            </div>
-                        </a>
+                        </div>
+                    </div>
+                    
+                    <!-- SORTIR.IN -->
+                    <div class="project-card medium" data-aos="fade-up">
+                        <img src="img/sortirin.png" alt="Sortir.in IoT">
+                        <div class="card-info">
+                            <div class="tech-tags"><small>C++</small><small>ESP32</small><small>Laravel</small></div>
+                            <h3>SORTIR.IN: Smart Waste Sorter</h3>
+                            <p>IoT Hardware with real-time web monitoring for automatic waste classification.</p>
+                            <a href="detail/sortirin.html" class="link-detail">View Details →</a>
+                        </div>
                     </div>
                 </div>
 
+                <!-- COLUMN 2 -->
                 <div class="waterfall-column col-up">
-                    <div class="card-group">
-                        <!-- WARUNG LESEHAN -->
-                        <a href="detail/ayam.html" class="project-card tall">
-                            <img src="img/thumbnail ayam.png" alt="Management System">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Laravel</small><small>Vue.js</small></div>
-                                <h3>Restaurant Management System</h3>
-                                <span>Handling 300+ daily transactions</span>
+                    <!-- RIFOLD (LIVE) -->
+                    <div class="project-card medium" data-aos="fade-up">
+                        <img src="img/rifold banner.png" alt="Rifold">
+                        <div class="card-info">
+                            <div class="tech-tags"><small>Laravel</small><small>Tailwind CSS</small><small>VPS</small></div>
+                            <h3>Rifold E-Commerce</h3>
+                            <p>Full digital transformation for local brand. Deployed on custom VPS.</p>
+                            <div class="card-action-links">
+                                <a href="https://rifold.felissel.my.id" target="_blank" class="btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="detail/rifold.html" class="link-detail">Case Study →</a>
                             </div>
-                        </a>
-                        <!-- TRAVELMATE AI -->
-                        <a href="detail/travel.html" class="project-card medium">
-                            <img src="img/travelID.png" alt="AI Travel">
-                            <div class="card-info">
-                                <div class="tech-tags"><small>Python</small><small>FAISS</small><small>AI</small></div>
-                                <h3>TravelMateID AI Engine</h3>
-                                <span>Vector Similarity Recommendation</span>
-                            </div>
-                        </a>
+                        </div>
+                    </div>
+
+                    <!-- TRAVELMATE AI -->
+                    <div class="project-card tall" data-aos="fade-up">
+                        <img src="img/travelID.png" alt="AI Travel">
+                        <div class="card-info">
+                            <div class="tech-tags"><small>Python</small><small>FAISS</small><small>AI</small></div>
+                            <h3>TravelMateID AI Engine</h3>
+                            <p>Vector similarity search for personalized travel recommendations using FAISS.</p>
+                            <a href="detail/travel.html" class="link-detail">View Details →</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,36 +194,25 @@
                 <button class="slider-btn prev-btn" onclick="scrollExp(-1)"><i class="fas fa-chevron-left"></i></button>
                 <div class="experience-slider" id="expSlider">
                     
-                    <!-- Freelance -->
                     <div class="exp-card swiper-card">
                         <span class="exp-year">2025</span>
                         <h3>Freelance Full-Stack</h3>
                         <p class="company">Warung Lesehan Yogyakarta</p>
-                        <p class="desc">Eliminated 100% of manual cash flow recording & preventing financial losses via real-time system.</p>
+                        <p class="desc">Eliminated undetected financial losses by building a real-time POS system. Trained 15 non-technical staff for full adoption.</p>
                     </div>
 
-                    <!-- Rifold -->
                     <div class="exp-card swiper-card">
                         <span class="exp-year">2025</span>
                         <h3>Full-Stack (Volunteer)</h3>
-                        <p class="company">Rifold E-Commerce</p>
-                        <p class="desc">Deployed production-ready platform on custom VPS with 3.84 GPA maintenance.</p>
+                        <p class="company">Rifold E-Commerce Project</p>
+                        <p class="desc">Initiated digital transformation. Managed end-to-end development from Figma to VPS deployment within 3 months.</p>
                     </div>
 
-                    <!-- SevenInc -->
                     <div class="exp-card swiper-card">
                         <span class="exp-year">2023 — 2024</span>
                         <h3>UI/UX Designer Intern</h3>
                         <p class="company">SevenInc.</p>
-                        <p class="desc">Designed finance job portals & prototyped Car Rental Systems with cross-functional teams.</p>
-                    </div>
-
-                    <!-- Leadership -->
-                    <div class="exp-card swiper-card">
-                        <span class="exp-year">2025</span>
-                        <h3>Event Chairperson</h3>
-                        <p class="company">Catholic Faculty Welcoming</p>
-                        <p class="desc">Led full execution of large-scale event, coordinating 5+ divisions & high-level budgets.</p>
+                        <p class="desc">Delivered end-to-end finance job portal designs and implemented responsive React components.</p>
                     </div>
 
                 </div>
@@ -231,13 +225,13 @@
     <footer id="contact" class="footer">
         <div class="container">
             <h2>Ready to collaborate?</h2>
-            <p>Available for Fullstack Developer or IoT roles.</p>
+            <p>I'm currently open for Fullstack Developer or IoT Engineer roles.</p>
             <div class="social-links">
                 <a href="https://linkedin.com/in/felisitas-griselda-95b271218" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/grizzyll" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:grizyyel10@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">&copy; 2025 Felisitas Griselda Arindia.</p>
+            <p class="copyright">&copy; 2025 Felisitas Griselda Arindia. Built with Passion & Precision.</p>
         </div>
     </footer>
 
